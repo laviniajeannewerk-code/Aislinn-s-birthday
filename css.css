@@ -1,0 +1,33 @@
+/* Dark background for the whole page */
+body {
+  background-color: black; /* fallback colour */
+  background-image: url("snoopy.jpeg");
+  background-repeat: no-repeat; /* prevent tiling */
+  background-size: cover; /* stretch to fill the screen */
+  background-position: center; /* keep image centred */
+}
+
+
+
+/* Container to keep things neat */
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Style the heading */
+h1 {
+  color: #121212; /* gold highlight colour */
+}
+
+/* Style the iframe border */
+iframe {
+  border: 3px solid #121212;
+  border-radius: 10px;
+}
+
+<button 
+  onclick="window.location.href='password.html'" 
+  style="padding: 40px 100px; font-size: 68px; border-radius: 20px; cursor: pointer;">
+  Continue
+</button>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Gate</title>
+  <style>
+    body {
+      background-color: #9dc0d4;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding-top: 50px;
+    }
+    input[type="password"] {
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 250px;
+      margin-top: 10px;
+    }
+    button {
+      padding: 20px 50px;
+      font-size: 24px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+    }
+    button:hover {
+      background-color: #ff85c1;
+    }
+    h1, h3 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔒 Enter Password to Unlock Your Birthday Surprise</h1>
+  <h3>Hint: I'm the Snoopy to your...</h3> 
+
+  <input type="password" id="password" placeholder="Enter password" onkeypress="if(event.key==='Enter'){checkPassword();}">
+  <br>
+  <button onclick="checkPassword()">Unlock</button>
+
+  <script>
+    function checkPassword() {
+      let pass = document.getElementById("password").value.trim().toLowerCase();
+      if(pass === "woodstock") {
+        // Redirect in the same tab
+        window.location.href = "birthday.mp4";
+      } else {
+        alert("Wrong password! Try again.");
+      }
+    }
+  </script>
+<!-- Add this inside <body>, at the end -->
+<img src="curious.jpeg" alt="Curious" style="
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 150px;   /* adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* optional, makes it look nicer */">
+
+</body>
+</html>
+
+
